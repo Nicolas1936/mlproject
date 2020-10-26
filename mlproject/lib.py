@@ -3,6 +3,7 @@
 """ Main lib for mlproject Project
 """
 
+
 from os.path import split
 import pandas as pd
 import datetime
@@ -47,7 +48,7 @@ def clean_data(data):
     data.loc[:, 'Frequency'] = data['Frequency'].map(drows)
     return data
 
-
+"""
 if __name__ == '__main__':
     # For introspections purpose to quickly get this functions on ipython
     import mlproject
@@ -55,3 +56,4 @@ if __name__ == '__main__':
     df = pd.read_csv('{}/data/data.csv.gz'.format(folder_source))
     clean_data = clean_data(df)
     print(' dataframe cleaned')
+"""
